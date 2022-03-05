@@ -7,6 +7,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -158,6 +159,27 @@ public class LoadingDialog {
 
     public LoadingDialog setDialogBackgroundDrawable(Drawable drawable) {
         this.loadingDialogLayout.setBackground(drawable);
+        return this;
+    }
+
+    public LoadingDialog setDialogGravity(int position){
+        loadingDialog.getWindow().setGravity(position);
+        return this;
+    }
+
+    public LoadingDialog setDialogHeight(int height) {
+        WindowManager.LayoutParams layoutParams = new WindowManager.LayoutParams();
+        layoutParams.copyFrom(loadingDialog.getWindow().getAttributes());
+        layoutParams.height = height;
+        loadingDialog.getWindow().setAttributes(layoutParams);
+        return this;
+    }
+
+    public LoadingDialog setDialogWidth(int width) {
+        WindowManager.LayoutParams layoutParams = new WindowManager.LayoutParams();
+        layoutParams.copyFrom(loadingDialog.getWindow().getAttributes());
+        layoutParams.width = width;
+        loadingDialog.getWindow().setAttributes(layoutParams);
         return this;
     }
 
