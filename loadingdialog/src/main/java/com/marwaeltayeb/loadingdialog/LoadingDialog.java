@@ -2,9 +2,13 @@ package com.marwaeltayeb.loadingdialog;
 
 import android.content.Context;
 import android.content.DialogInterface;
+import android.graphics.BlendMode;
+import android.graphics.BlendModeColorFilter;
+import android.graphics.PorterDuff;
 import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.WindowManager;
@@ -183,5 +187,23 @@ public class LoadingDialog {
         return this;
     }
 
-    
+    public LoadingDialog setProgressBarColor(int color){
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+            this.progressBar.getIndeterminateDrawable().setColorFilter(new BlendModeColorFilter(color, BlendMode.SRC_ATOP));
+        } else {
+            this.progressBar.getIndeterminateDrawable().setColorFilter(color, PorterDuff.Mode.SRC_ATOP);
+        }
+        return this;
+    }
+
+    public LoadingDialog setProgressBarBackGround(int color){
+        this.progressBar.setBackgroundColor(color);
+        return this;
+    }
+
+    public LoadingDialog setProgressBarBackGround(Drawable drawable){
+        this.progressBar.setBackground(drawable);
+        return this;
+    }
+
 }
