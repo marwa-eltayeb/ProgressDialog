@@ -3,6 +3,8 @@ package com.marwaeltayeb.loadingdialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.Typeface;
+import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -136,6 +138,26 @@ public class LoadingDialog {
 
     public LoadingDialog setCancelable(boolean cancelable) {
         this.loadingDialog.setCancelable(cancelable);
+        return this;
+    }
+
+    public LoadingDialog setDialogDimAmount(float amount) {
+        loadingDialog.getWindow().setDimAmount(amount);
+        return this;
+    }
+
+    public LoadingDialog setDialogTransparent(){
+        loadingDialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
+        return this;
+    }
+
+    public LoadingDialog setDialogBackground(int color){
+        this.loadingDialogLayout.setBackgroundColor(color);
+        return this;
+    }
+
+    public LoadingDialog setDialogBackgroundDrawable(Drawable drawable) {
+        this.loadingDialogLayout.setBackground(drawable);
         return this;
     }
 
