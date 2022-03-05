@@ -133,4 +133,11 @@ public class LoadingDialog {
         this.loadingDialog.setOnDismissListener(listener);
         return this;
     }
+
+    public LoadingDialog setCancelable(boolean cancelable) {
+        this.loadingDialog.setCancelable(cancelable);
+        return this;
+    }
+
+    
 }
