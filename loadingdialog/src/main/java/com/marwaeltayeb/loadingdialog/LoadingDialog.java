@@ -78,4 +78,23 @@ public class LoadingDialog {
         return this;
     }
 
+    public void show(){
+        this.loadingDialog.show();
+    }
+
+    public void hide(){
+        this.loadingDialog.hide();
+    }
+
+    public void dismiss() {
+        this.loadingDialog.dismiss();
+    }
+
+    public void cancel() {
+        this.loadingDialog.cancel();
+    }
+
+    public boolean isShowing() {
+        return this.loadingDialog.isShowing();
+    }
 }
