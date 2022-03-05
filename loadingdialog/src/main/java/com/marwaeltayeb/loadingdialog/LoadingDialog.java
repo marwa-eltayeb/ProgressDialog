@@ -102,6 +102,11 @@ public class LoadingDialog {
         this.loadingDialog.setTitle(title);
         return this;
     }
+
+    public LoadingDialog setCustomTitle(View customTitle) {
+        this.loadingDialog.setCustomTitle(customTitle);
+        return this;
+    }
     
     public LoadingDialog setMessage(String message) {
         this.loadingDialog.setMessage(message);
