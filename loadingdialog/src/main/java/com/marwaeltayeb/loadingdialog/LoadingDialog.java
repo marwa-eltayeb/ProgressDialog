@@ -1,6 +1,7 @@
 package com.marwaeltayeb.loadingdialog;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -107,7 +108,7 @@ public class LoadingDialog {
         this.loadingDialog.setCustomTitle(customTitle);
         return this;
     }
-    
+
     public LoadingDialog setMessage(String message) {
         this.loadingDialog.setMessage(message);
         return this;
@@ -115,6 +116,21 @@ public class LoadingDialog {
 
     public LoadingDialog setIcon(int resID) {
         this.loadingDialog.setIcon(resID);
+        return this;
+    }
+
+    public LoadingDialog setOnShowListener(DialogInterface.OnShowListener listener) {
+        this.loadingDialog.setOnShowListener(listener);
+        return this;
+    }
+
+    public LoadingDialog setOnCancelListener(DialogInterface.OnCancelListener listener) {
+        this.loadingDialog.setOnCancelListener(listener);
+        return this;
+    }
+
+    public LoadingDialog setOnDismissListener(DialogInterface.OnDismissListener listener) {
+        this.loadingDialog.setOnDismissListener(listener);
         return this;
     }
 }
