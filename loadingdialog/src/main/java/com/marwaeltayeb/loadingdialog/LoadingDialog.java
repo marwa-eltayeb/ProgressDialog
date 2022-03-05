@@ -52,5 +52,18 @@ public class LoadingDialog {
         return this;
     }
 
-    
+    public LoadingDialog setTextPadding(int left, int top, int right, int bottom){
+        this.txtFeedBack.setPadding( left,  top,  right,  bottom);
+        return this;
+    }
+
+    public LoadingDialog setTextPadding(int padding){
+        this.txtFeedBack.setPadding( padding,  padding,  padding,  padding);
+        return this;
+    }
+
+    public LoadingDialog setTextPaddingBottom(int padding){
+        this.txtFeedBack.setPadding( txtFeedBack.getPaddingLeft(),  txtFeedBack.getPaddingTop(),  txtFeedBack.getPaddingRight(),  padding);
+        return this;
+    }
 }
