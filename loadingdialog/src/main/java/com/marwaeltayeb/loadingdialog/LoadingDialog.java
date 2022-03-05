@@ -206,4 +206,13 @@ public class LoadingDialog {
         return this;
     }
 
+    public LoadingDialog hideProgressBar(){
+        this.progressBar.setVisibility(View.INVISIBLE);
+        return this;
+    }
+
+    public LoadingDialog showProgressBar(){
+        this.progressBar.setVisibility(View.VISIBLE);
+        return this;
+    }
 }
