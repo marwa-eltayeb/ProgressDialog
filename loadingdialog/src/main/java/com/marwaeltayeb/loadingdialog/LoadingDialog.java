@@ -215,4 +215,9 @@ public class LoadingDialog {
         this.progressBar.setVisibility(View.VISIBLE);
         return this;
     }
+    
+    public LoadingDialog setProgressBarShape(Drawable drawable) {
+        this.progressBar.setIndeterminateDrawable(drawable);
+        return this;
+    }
 }
