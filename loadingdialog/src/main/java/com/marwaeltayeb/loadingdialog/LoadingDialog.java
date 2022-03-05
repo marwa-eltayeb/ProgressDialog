@@ -1,6 +1,7 @@
 package com.marwaeltayeb.loadingdialog;
 
 import android.content.Context;
+import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -66,4 +67,15 @@ public class LoadingDialog {
         this.txtFeedBack.setPadding( txtFeedBack.getPaddingLeft(),  txtFeedBack.getPaddingTop(),  txtFeedBack.getPaddingRight(),  padding);
         return this;
     }
+
+    public LoadingDialog setTextShape(int shape){
+        this.txtFeedBack.setBackgroundResource(shape);
+        return this;
+    }
+
+    public LoadingDialog setTextFont(Typeface typeface){
+        this.txtFeedBack.setTypeface(typeface);
+        return this;
+    }
+
 }
