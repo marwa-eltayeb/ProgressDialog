@@ -26,4 +26,31 @@ public class LoadingDialog {
         txtFeedBack = view.findViewById(R.id.txtFeedBack);
         progressBar = view.findViewById(R.id.progressBar);
     }
+
+    public LoadingDialog setText(String text) {
+        this.txtFeedBack.setText(text);
+        return this;
+    }
+
+    public LoadingDialog setTextSize(float size) {
+        this.txtFeedBack.setTextSize(size);
+        return this;
+    }
+
+    public LoadingDialog setTextVisibility(int visibility) {
+        this.txtFeedBack.setVisibility(visibility);
+        return this;
+    }
+
+    public LoadingDialog setTextColor(int color){
+        this.txtFeedBack.setTextColor(color);
+        return this;
+    }
+
+    public LoadingDialog setTextBackground(int color){
+        this.txtFeedBack.setBackgroundColor(color);
+        return this;
+    }
+
+    
 }
