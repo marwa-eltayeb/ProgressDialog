@@ -97,4 +97,19 @@ public class LoadingDialog {
     public boolean isShowing() {
         return this.loadingDialog.isShowing();
     }
+
+    public LoadingDialog setTitle(String title) {
+        this.loadingDialog.setTitle(title);
+        return this;
+    }
+    
+    public LoadingDialog setMessage(String message) {
+        this.loadingDialog.setMessage(message);
+        return this;
+    }
+
+    public LoadingDialog setIcon(int resID) {
+        this.loadingDialog.setIcon(resID);
+        return this;
+    }
 }
