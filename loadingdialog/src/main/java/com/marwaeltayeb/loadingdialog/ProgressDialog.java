@@ -26,7 +26,7 @@ public class ProgressDialog {
     private final ProgressBar progressBar;
 
     public ProgressDialog(Context context) {
-        final View view = LayoutInflater.from(context).inflate(R.layout.layout_loading_dialog, null);
+        final View view = LayoutInflater.from(context).inflate(R.layout.layout_progress_dialog, null);
 
         loadingDialog = new AlertDialog.Builder(context).create();
         loadingDialog.setView(view);
