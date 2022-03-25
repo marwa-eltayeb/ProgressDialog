@@ -166,6 +166,11 @@ public class ProgressDialog {
         return this;
     }
 
+    public ProgressDialog setDialogPadding(int padding){
+        this.loadingDialogLayout.setPadding( padding,  padding,  padding,  padding);
+        return this;
+    }
+
     public ProgressDialog setDialogGravity(int position){
         loadingDialog.getWindow().setGravity(position);
         return this;
