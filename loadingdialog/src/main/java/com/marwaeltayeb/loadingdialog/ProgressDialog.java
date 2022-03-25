@@ -18,14 +18,14 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AlertDialog;
 
-public class LoadingDialog {
+public class ProgressDialog {
 
     private final AlertDialog loadingDialog;
     private final LinearLayout loadingDialogLayout;
     private final TextView txtFeedBack;
     private final ProgressBar progressBar;
 
-    public LoadingDialog(Context context) {
+    public ProgressDialog(Context context) {
         final View view = LayoutInflater.from(context).inflate(R.layout.layout_loading_dialog, null);
 
         loadingDialog = new AlertDialog.Builder(context).create();
@@ -36,52 +36,52 @@ public class LoadingDialog {
         progressBar = view.findViewById(R.id.progressBar);
     }
 
-    public LoadingDialog setText(String text) {
+    public ProgressDialog setText(String text) {
         this.txtFeedBack.setText(text);
         return this;
     }
 
-    public LoadingDialog setTextSize(float size) {
+    public ProgressDialog setTextSize(float size) {
         this.txtFeedBack.setTextSize(size);
         return this;
     }
 
-    public LoadingDialog setTextVisibility(int visibility) {
+    public ProgressDialog setTextVisibility(int visibility) {
         this.txtFeedBack.setVisibility(visibility);
         return this;
     }
 
-    public LoadingDialog setTextColor(int color){
+    public ProgressDialog setTextColor(int color){
         this.txtFeedBack.setTextColor(color);
         return this;
     }
 
-    public LoadingDialog setTextBackground(int color){
+    public ProgressDialog setTextBackground(int color){
         this.txtFeedBack.setBackgroundColor(color);
         return this;
     }
 
-    public LoadingDialog setTextPadding(int left, int top, int right, int bottom){
+    public ProgressDialog setTextPadding(int left, int top, int right, int bottom){
         this.txtFeedBack.setPadding( left,  top,  right,  bottom);
         return this;
     }
 
-    public LoadingDialog setTextPadding(int padding){
+    public ProgressDialog setTextPadding(int padding){
         this.txtFeedBack.setPadding( padding,  padding,  padding,  padding);
         return this;
     }
 
-    public LoadingDialog setTextPaddingBottom(int padding){
+    public ProgressDialog setTextPaddingBottom(int padding){
         this.txtFeedBack.setPadding( txtFeedBack.getPaddingLeft(),  txtFeedBack.getPaddingTop(),  txtFeedBack.getPaddingRight(),  padding);
         return this;
     }
 
-    public LoadingDialog setTextShape(int shape){
+    public ProgressDialog setTextShape(int shape){
         this.txtFeedBack.setBackgroundResource(shape);
         return this;
     }
 
-    public LoadingDialog setTextFont(Typeface typeface){
+    public ProgressDialog setTextFont(Typeface typeface){
         this.txtFeedBack.setTypeface(typeface);
         return this;
     }
@@ -106,72 +106,72 @@ public class LoadingDialog {
         return this.loadingDialog.isShowing();
     }
 
-    public LoadingDialog setTitle(String title) {
+    public ProgressDialog setTitle(String title) {
         this.loadingDialog.setTitle(title);
         return this;
     }
 
-    public LoadingDialog setCustomTitle(View customTitle) {
+    public ProgressDialog setCustomTitle(View customTitle) {
         this.loadingDialog.setCustomTitle(customTitle);
         return this;
     }
 
-    public LoadingDialog setMessage(String message) {
+    public ProgressDialog setMessage(String message) {
         this.loadingDialog.setMessage(message);
         return this;
     }
 
-    public LoadingDialog setIcon(int resID) {
+    public ProgressDialog setIcon(int resID) {
         this.loadingDialog.setIcon(resID);
         return this;
     }
 
-    public LoadingDialog setOnShowListener(DialogInterface.OnShowListener listener) {
+    public ProgressDialog setOnShowListener(DialogInterface.OnShowListener listener) {
         this.loadingDialog.setOnShowListener(listener);
         return this;
     }
 
-    public LoadingDialog setOnCancelListener(DialogInterface.OnCancelListener listener) {
+    public ProgressDialog setOnCancelListener(DialogInterface.OnCancelListener listener) {
         this.loadingDialog.setOnCancelListener(listener);
         return this;
     }
 
-    public LoadingDialog setOnDismissListener(DialogInterface.OnDismissListener listener) {
+    public ProgressDialog setOnDismissListener(DialogInterface.OnDismissListener listener) {
         this.loadingDialog.setOnDismissListener(listener);
         return this;
     }
 
-    public LoadingDialog setCancelable(boolean cancelable) {
+    public ProgressDialog setCancelable(boolean cancelable) {
         this.loadingDialog.setCancelable(cancelable);
         return this;
     }
 
-    public LoadingDialog setDialogDimAmount(float amount) {
+    public ProgressDialog setDialogDimAmount(float amount) {
         loadingDialog.getWindow().setDimAmount(amount);
         return this;
     }
 
-    public LoadingDialog setDialogTransparent(){
+    public ProgressDialog setDialogTransparent(){
         loadingDialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
         return this;
     }
 
-    public LoadingDialog setDialogBackground(int color){
+    public ProgressDialog setDialogBackground(int color){
         this.loadingDialogLayout.setBackgroundColor(color);
         return this;
     }
 
-    public LoadingDialog setDialogBackgroundDrawable(Drawable drawable) {
+    public ProgressDialog setDialogBackgroundDrawable(Drawable drawable) {
         this.loadingDialogLayout.setBackground(drawable);
         return this;
     }
 
-    public LoadingDialog setDialogGravity(int position){
+    public ProgressDialog setDialogGravity(int position){
         loadingDialog.getWindow().setGravity(position);
         return this;
     }
 
-    public LoadingDialog setDialogHeight(int height) {
+    public ProgressDialog setDialogHeight(int height) {
         WindowManager.LayoutParams layoutParams = new WindowManager.LayoutParams();
         layoutParams.copyFrom(loadingDialog.getWindow().getAttributes());
         layoutParams.height = height;
@@ -179,7 +179,7 @@ public class LoadingDialog {
         return this;
     }
 
-    public LoadingDialog setDialogWidth(int width) {
+    public ProgressDialog setDialogWidth(int width) {
         WindowManager.LayoutParams layoutParams = new WindowManager.LayoutParams();
         layoutParams.copyFrom(loadingDialog.getWindow().getAttributes());
         layoutParams.width = width;
@@ -187,7 +187,7 @@ public class LoadingDialog {
         return this;
     }
 
-    public LoadingDialog setProgressBarColor(int color){
+    public ProgressDialog setProgressBarColor(int color){
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
             this.progressBar.getIndeterminateDrawable().setColorFilter(new BlendModeColorFilter(color, BlendMode.SRC_ATOP));
         } else {
@@ -196,27 +196,27 @@ public class LoadingDialog {
         return this;
     }
 
-    public LoadingDialog setProgressBarBackGround(int color){
+    public ProgressDialog setProgressBarBackGround(int color){
         this.progressBar.setBackgroundColor(color);
         return this;
     }
 
-    public LoadingDialog setProgressBarBackGround(Drawable drawable){
+    public ProgressDialog setProgressBarBackGround(Drawable drawable){
         this.progressBar.setBackground(drawable);
         return this;
     }
 
-    public LoadingDialog hideProgressBar(){
+    public ProgressDialog hideProgressBar(){
         this.progressBar.setVisibility(View.INVISIBLE);
         return this;
     }
 
-    public LoadingDialog showProgressBar(){
+    public ProgressDialog showProgressBar(){
         this.progressBar.setVisibility(View.VISIBLE);
         return this;
     }
     
-    public LoadingDialog setProgressBarShape(Drawable drawable) {
+    public ProgressDialog setProgressBarShape(Drawable drawable) {
         this.progressBar.setIndeterminateDrawable(drawable);
         return this;
     }
