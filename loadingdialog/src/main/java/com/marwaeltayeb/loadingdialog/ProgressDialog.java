@@ -220,6 +220,16 @@ public class ProgressDialog {
         this.progressBar.setVisibility(View.VISIBLE);
         return this;
     }
+
+    public ProgressDialog setProgress(int progress){
+        progressBar.setProgress(progress);
+        return this;
+    }
+
+    public ProgressDialog setProgressMax(int max){
+        progressBar.setMax(max);
+        return this;
+    }
     
     public ProgressDialog setProgressBarShape(Drawable drawable) {
         this.progressBar.setIndeterminateDrawable(drawable);
