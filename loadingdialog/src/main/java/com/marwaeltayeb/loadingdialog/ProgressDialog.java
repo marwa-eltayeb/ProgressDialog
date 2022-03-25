@@ -211,6 +211,11 @@ public class ProgressDialog {
         return this;
     }
 
+    public ProgressDialog setProgressDrawable(Drawable drawable){
+        this.progressBar.setProgressDrawable(drawable);
+        return this;
+    }
+
     public ProgressDialog hideProgressBar(){
         this.progressBar.setVisibility(View.INVISIBLE);
         return this;
