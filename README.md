@@ -5,5 +5,10 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/marwa-eltayeb/progressdialog/badge)](https://www.codefactor.io/repository/github/marwa-eltayeb/progressdialog)
 [![Min API Level](https://img.shields.io/badge/API-%2B17-brightgreen)]()
 
-
 Android Library to create various kinds of Custom Progress Dialog 
+
+<img src="media/default_dialog.gif" alt="animated" width="24%"/> <img src="media/colorful_dialog.gif" alt="animated" width="24%"/>
+<img src="media/changing_quarter_dialog.gif" alt="animated" width="24%"/> <img src="media/sunset_dialog.gif" alt="animated" width="24%"/>
+
+<img src="media/charging_dialog.gif" alt="animated" width="24%"/> <img src="media/rotating_image_dialog.gif" alt="animated" width="24%"/>
+<img src="media/gradient_dialog.gif" alt="animated" width="24%"/> <img src="media/scanning_dialog.gif" alt="animated" width="24%"/>
