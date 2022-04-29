@@ -1,4 +1,4 @@
-package com.marwaeltayeb.loadingdialog;
+package com.marwaeltayeb.progressdialog;
 
 import static org.junit.Assert.assertEquals;
 

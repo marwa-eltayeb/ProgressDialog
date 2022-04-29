@@ -1,4 +1,4 @@
-package com.marwaeltayeb.loadingdialog;
+package com.marwaeltayeb.progressdialog;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -17,8 +17,6 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AlertDialog;
-
-import com.marwaeltayeb.progressdialog.R;
 
 public class ProgressDialog {
 
