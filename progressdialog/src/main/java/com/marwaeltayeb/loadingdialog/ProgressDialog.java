@@ -443,6 +443,16 @@ public class ProgressDialog {
     }
 
     /**
+     * Set the padding of the ProgressDialog
+     * @param  padding of the ProgressDialog
+     * @return the instance of ProgressDialog to make a chain of function easily
+     */
+    public ProgressDialog setProgressBarPadding(int padding){
+        this.progressBar.setPadding( padding,  padding,  padding,  padding);
+        return this;
+    }
+
+    /**
      * Set the Percentage of Progressbar
      * @param text - percentage of Progressbar
      * @return the instance of ProgressDialog to make a chain of function easily
