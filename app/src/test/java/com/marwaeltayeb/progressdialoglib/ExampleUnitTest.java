@@ -1,4 +1,4 @@
-package com.marwaeltayeb.loadingdialoglib;
+package com.marwaeltayeb.progressdialoglib;
 
 import org.junit.Test;
 

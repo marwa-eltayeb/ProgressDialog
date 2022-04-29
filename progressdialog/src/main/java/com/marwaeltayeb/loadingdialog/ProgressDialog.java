@@ -18,6 +18,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AlertDialog;
 
+import com.marwaeltayeb.progressdialog.R;
+
 public class ProgressDialog {
 
     /**

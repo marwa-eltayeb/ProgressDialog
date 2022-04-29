@@ -6,6 +6,6 @@ dependencyResolutionManagement {
         jcenter() // Warning: this repository is going to shut down soon
     }
 }
-rootProject.name = "LoadingDialog"
+rootProject.name = "ProgressDialog"
 include ':app'
-include ':loadingdialog'
+include ':progressdialog'
