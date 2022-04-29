@@ -7,4 +7,14 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="color_preloader_start">#000000</color>
+    <color name="color_preloader_center">#000000</color>
+    <color name="color_preloader_end">#00BD08</color>
+
+    <color name="pink">#E91E63</color>
+    <color name="orange">#FFC107</color>
+    <color name="dark_red">#b71c1c</color>
+    <color name="dark_green">#00AF07</color>
+    <color name="teal">#367A87</color>
 </resources>

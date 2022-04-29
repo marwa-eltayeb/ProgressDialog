@@ -1,18 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-    <TextView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="Hello World!"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintLeft_toLeftOf="parent"
-      app:layout_constraintRight_toRightOf="parent"
-      app:layout_constraintTop_toTopOf="parent" />
 
-  </androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/defaultDialogButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:text="@string/_1" />
+
+    <Button
+        android:id="@+id/colorfulDialogButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/defaultDialogButton"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:text="@string/_2" />
+
+    <Button
+        android:id="@+id/gradientDialogButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/colorfulDialogButton"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:text="@string/_3" />
+
+    <Button
+        android:id="@+id/transparentDialogButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/gradientDialogButton"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:text="@string/_4" />
+
+    <Button
+        android:id="@+id/sunsetDialogButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/defaultDialogButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="100dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:text="@string/_5" />
+
+    <Button
+        android:id="@+id/chargingDialogButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/colorfulDialogButton"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/sunsetDialogButton"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:text="@string/_6" />
+
+    <Button
+        android:id="@+id/rotatingImageDialogButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/colorfulDialogButton"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/chargingDialogButton"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:text="@string/_7" />
+
+    <Button
+        android:id="@+id/changingQuarterDialogButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/colorfulDialogButton"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/rotatingImageDialogButton"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:text="@string/_8" />
+</RelativeLayout>
