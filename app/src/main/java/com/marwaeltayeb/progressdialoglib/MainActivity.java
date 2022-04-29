@@ -112,6 +112,7 @@ public class MainActivity extends AppCompatActivity {
                 .setDialogPadding(50)
                 .setCustomTitle(textView)
                 .setTextSize(18)
+                .setProgressBarPadding(20)
                 .setProgressBarShape(ContextCompat.getDrawable(this, R.drawable.animated_images))
                 .setText("Waiting...");
 
