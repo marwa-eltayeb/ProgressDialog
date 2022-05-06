@@ -13,3 +13,15 @@ Android Library to create various kinds of Custom Progress Dialog
 
 <img src="media/charging_dialog.gif" alt="animated" width="24%"/> <img src="media/rotating_image_dialog.gif" alt="animated" width="24%"/>
 <img src="media/gradient_dialog.gif" alt="animated" width="24%"/> <img src="media/scanning_dialog.gif" alt="animated" width="24%"/>
+
+### Why using ProgressDialog is an asset?
+
+- You have various kinds of dialogs.
+- You create your own dialog and use them.
+- You can change your ProgressDialog width and height.
+- You can customize ProgressDialog title (change text color, size, font and visibility).
+- You can customize Feedback message (change color, size, font and visibility).
+- You can customize your ProgressBar (change color, size, font and visibility).
+- You can add many shapes as a ProgressBar.
+- You can use your favorite image as a ProgressBar.
+- And much more...
