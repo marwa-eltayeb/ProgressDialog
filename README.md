@@ -32,3 +32,24 @@ From Maven Central
 ```gradle
 implementation 'io.github.marwa-eltayeb:progressdialog:1.0.0'
 ```
+
+### Code Example
+
+```java
+
+TextView customTitle = new TextView(this);
+customTitle.setText(getResources().getString(R.string.please_wait));
+customTitle.setPadding(20, 30, 20, 30);
+customTitle.setTextSize(20F);
+customTitle.setBackgroundColor(getResources().getColor(R.color.pink));
+customTitle.setTextColor(Color.WHITE);
+
+ProgressDialog progressDialog = new ProgressDialog(this)
+    .setDialogPadding(50)
+    .setCustomTitle(customTitle)
+    .setTextSize(18)
+    .setProgressBarColor(getResources().getColor(R.color.pink))
+    .setText("Loading...");
+
+progressDialog.show();
+```
