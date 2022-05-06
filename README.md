@@ -25,3 +25,10 @@ Android Library to create various kinds of Custom Progress Dialog
 - You can add many shapes as a ProgressBar.
 - You can use your favorite image as a ProgressBar.
 - And much more...
+
+### Add ProgressDialog to your project
+
+From Maven Central
+```gradle
+implementation 'io.github.marwa-eltayeb:progressdialog:1.0.0'
+```
