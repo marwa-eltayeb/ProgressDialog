@@ -74,7 +74,7 @@ public class ProgressDialog {
     }
 
     /**
-     * Set the dialog title visibility
+     * Set the visibility of FeedBack text.
      * @param visibility value of the feedback text (VISIBLE, INVISIBLE or GONE)
      * @return the instance of ProgressDialog to make a chain of function easily
      */
@@ -84,7 +84,7 @@ public class ProgressDialog {
     }
 
     /**
-     * Set the color of the FeedBack text
+     * Set the color of the FeedBack text.
      * @param color of the FeedBack text
      * @return the instance of ProgressDialog to make a chain of function easily
      */
@@ -441,7 +441,7 @@ public class ProgressDialog {
     }
 
     /**
-     * Set the padding of the ProgressDialog
+     * Set the padding of the Progressbar
      * @param  padding of the ProgressDialog
      * @return the instance of ProgressDialog to make a chain of function easily
      */
